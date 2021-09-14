@@ -1,19 +1,31 @@
-const dbPool = require('./db');
-const express =require('express');
-const bodyParser = require('body-parser');
-
+const dbPool = require("./db");
+const express = require("express");
+const bodyParser = require("body-parser");
+const axios = require("axios");
+const cors = require("cors");
 const app = express();
+const expressRouter = express.Router();
+const {
+  capsulesController,
+  landingPadController,
+} = require("./src/controllers");
+const {
+  BASE_PATH,
+  CAPSULES_END_POINT_PATH,
+  LANDING_PAD_END_POINT_PATH,
+} = require("./src/constants");
+
 
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended:true}));
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(cors());
+app.use(BASE_PATH, expressRouter);
 
-app.get('/', async (req, res) => {
-    const rows = await dbPool.query('SELECT * FROM spaceData');
-    res.status(200);
-    res.send({
-        result: JSON.stringify(rows)
-    });
-});
+// Plugging controllers to route
+expressRouter.get(CAPSULES_END_POINT_PATH, capsulesController);
+expressRouter.get(LANDING_PAD_END_POINT_PATH, landingPadController);
 
-app.listen('4000');
-console.log(`Listening on port: 4000, wait for the development server to be up...`);
+app.listen("4000");
+console.log(
+  `Listening on port: 4000, wait for the development server to be up...`
+);
