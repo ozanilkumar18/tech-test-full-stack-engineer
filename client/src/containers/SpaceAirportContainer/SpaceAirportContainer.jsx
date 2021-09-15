@@ -28,10 +28,9 @@ const SpaceAirportContainer = () => {
 
   const handleTextInput = (event) => {
     const input = event.target.value;
-    console.log(event.target.value);
     const format = /[#$%&]/;
     if (!format.test(input)) {
-      console.log(event.target.value);
+
       setIsInputValid(true);
       dispatch(setFieldValue("dashboard", "landingPadId", input));
     } else {

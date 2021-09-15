@@ -1,7 +1,5 @@
-const dbPool = require("./db");
 const express = require("express");
 const bodyParser = require("body-parser");
-const axios = require("axios");
 const cors = require("cors");
 const app = express();
 const expressRouter = express.Router();
@@ -14,7 +12,6 @@ const {
   CAPSULES_END_POINT_PATH,
   LANDING_PAD_END_POINT_PATH,
 } = require("./src/constants");
-
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));

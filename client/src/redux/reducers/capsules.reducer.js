@@ -11,7 +11,7 @@ import {
   };
   
   export const capsulesReducer = (state = initialState, action) => {
-      console.log(`action##${JSON.stringify(action)}`);
+
     switch (action.type) {
       case CAPSULES_FETCHING:
         return {

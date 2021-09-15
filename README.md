@@ -27,3 +27,20 @@ From the docker folder of the project, run `docker-compose up -d`
 **The time recommended is 2-3 hours, try not to spend longer than that, we don’t want you to waste a precious day of your life over this. More importantly, you do not necessarily need to complete every point, we want to see how you work and how far you get, we are not actually sending rockets into space (not yet).**
 
 **Please commit your code to Github and share the link with us.**
+
+### DEV Docker
+
+cd into /dev-docker in root directory and run `docker-compose up -d`
+
+### PROD Docker
+
+rename Docker to Docker_Dev IN /client directory
+Rename Docker_prod to Docker in /client directory
+cd into /prod-docker in root directory
+run `docker-compose up -d`
+
+### App Snapshots
+
+![expanded_view](/images/dashboard_capsules.PNG)
+
+![expanded_view](/images/dashboard_mobile.PNG)
