@@ -19,6 +19,13 @@ Production optimized build will be generated and served via NGINX on port 3000.
 
 ![expanded_view](/images/dashboard_mobile.PNG)
 
+![dashboard_capsules](https://user-images.githubusercontent.com/46710568/133375781-67e009f9-b0d2-4067-a02a-f08d76d045ee.PNG)
+
+![dashboard_launch_pads](https://user-images.githubusercontent.com/46710568/133375806-1c9dbb8b-6464-4a09-b322-379c914aebe3.PNG)
+
+![dashboard_launch_pad_mobile](https://user-images.githubusercontent.com/46710568/133375818-c07a9efa-6af5-487b-9199-aea33affc183.PNG)
+
+
 # We are building a space airport - Tech Challenge
 
 We have been very busy for the past 12 months building aircraft hangars, digging safety tunnels and shafts, closing deals with NASA, SpaceX and ISA. Everything is almost ready and as a consequence of our partnership with SpaceX, we need to build our Ground Control flight dashboard to support their needs.
