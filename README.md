@@ -1,4 +1,24 @@
 
+### DEV Docker
+
+- cd into /dev-docker in root directory
+- run `docker-compose up -d`
+
+### PROD Docker
+
+Production optimized build will be generated and served via NGINX on port 3000.
+
+- rename Docker to Docker_Dev IN /client directory
+- Rename Docker_prod to Docker in /client directory
+- cd into /prod-docker in root directory
+- run `docker-compose up -d`
+
+### App Snapshots
+
+![expanded_view](/images/dashboard_capsules.PNG)
+
+![expanded_view](/images/dashboard_mobile.PNG)
+
 # We are building a space airport - Tech Challenge
 
 We have been very busy for the past 12 months building aircraft hangars, digging safety tunnels and shafts, closing deals with NASA, SpaceX and ISA. Everything is almost ready and as a consequence of our partnership with SpaceX, we need to build our Ground Control flight dashboard to support their needs.
@@ -28,19 +48,3 @@ From the docker folder of the project, run `docker-compose up -d`
 
 **Please commit your code to Github and share the link with us.**
 
-### DEV Docker
-
-cd into /dev-docker in root directory and run `docker-compose up -d`
-
-### PROD Docker
-
-rename Docker to Docker_Dev IN /client directory
-Rename Docker_prod to Docker in /client directory
-cd into /prod-docker in root directory
-run `docker-compose up -d`
-
-### App Snapshots
-
-![expanded_view](/images/dashboard_capsules.PNG)
-
-![expanded_view](/images/dashboard_mobile.PNG)
